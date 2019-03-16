@@ -10,25 +10,17 @@ import SongLine from "./SongLine"
 export default class App extends Component {
 
     render() {
-        // let lines = this.props.song.lines.map(
-        //     (line, key) => <SongLine verse={line.text} chords={line.chords} key={key}/>)
-        console.log(this.props);
-
         return (
             <View style={styles.vertical}>
-                <Text style={styles.title}>
-                {this.props.song.title}
-                </Text>
                 <ScrollView style={styles.vertical}>
                     {
-                        this.props.song.lines.map(
-                        (line, key) =>
-                            (<SongLine verse={line.text} chords={line.chords} key={key}/>)
+                        this.props.song.lines.map((line, key) =>
+                            <SongLine verse={line.text} chords={line.chords} key={key}/>
                         )
                     }
                 </ScrollView>
             </View>
-        );
+        )
     }
 }
 

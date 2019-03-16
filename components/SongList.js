@@ -24,18 +24,20 @@ export default class SongList extends React.Component {
 
     _keyExtractor = (item) => item.title;
 
-    _renderItem = ({item, key}) => (
-        <SongEntry
-            key={key}
-            title={item.title}
-            author={item.title}
-            onPress={() => {
-                this.props.navigation.navigate('Song', {
-                    song: item,
-                })
-            }}
-        />
-    )
+    _renderItem = ({item, key}) => {
+        if(this.props.all == true) {
+            <SongEntry
+                key={key}
+                title={item.title}
+                author={item.title}
+                onPress={() => {
+                    this.props.navigation.navigate('Song', {
+                        song: item,
+                    })
+                }}
+            />
+        }
+    }
 
     render() {
 

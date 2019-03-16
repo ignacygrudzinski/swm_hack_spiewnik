@@ -14,7 +14,7 @@ export default class LinksScreen extends React.Component {
     render() {
         return (
             <View style={styles.container}>
-                <SongList/>
+                <SongList all={false} navigation={this.props.navigation}/>
             </View>
         );
     }

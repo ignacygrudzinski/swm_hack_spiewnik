@@ -18,7 +18,7 @@ export default class HomeScreen extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <SongList navigation={this.props.navigation}/>
+        <SongList all={true} navigation={this.props.navigation}/>
       </View>
     )
   }
