@@ -12,150 +12,38 @@ import {
     View,
     ScrollView
 } from 'react-native';
-import SongLine from "./components/SongLine"
+import SongView from "./components/SongView"
 
 export default class App extends Component {
   render() {
     return (
-        <View style={{flex:1, flexDirection:'column'}}>
-        <Text style={{fontSize: 30, fontWeight: 'bold', paddingTop:30}}>
-            CAN I GET UHH...
-        </Text>
-        <ScrollView style={{flex:1, flexDirection: 'column'}}>
-            <SongLine verse={"pole pole łyse pole"} chords={"2 1 3 7"}/>
-            <SongLine verse={"ale mam już plan"} chords={"A A A A"}/>
-            <SongLine verse={"pole pole łyse pole"} chords={"2 1 3 7"}/>
-            <SongLine verse={"ale mam już plan"} chords={"A A A A"}/>
-            <SongLine verse={"pole pole łyse pole"} chords={"2 1 3 7"}/>
-            <SongLine verse={"ale mam już plan"} chords={"A A A A"}/>
-            <SongLine verse={"pole pole łyse pole"} chords={"2 1 3 7"}/>
-            <SongLine verse={"ale mam już plan"} chords={"A A A A"}/>
-            <SongLine verse={"pole pole łyse pole"} chords={"2 1 3 7"}/>
-            <SongLine verse={"ale mam już plan"} chords={"A A A A"}/>
-            <SongLine verse={"pole pole łyse pole"} chords={"2 1 3 7"}/>
-            <SongLine verse={"ale mam już plan"} chords={"A A A A"}/>
-            <SongLine verse={"pole pole łyse pole"} chords={"2 1 3 7"}/>
-            <SongLine verse={"ale mam już plan"} chords={"A A A A"}/>
-            <SongLine verse={"pole pole łyse pole"} chords={"2 1 3 7"}/>
-            <SongLine verse={"ale mam już plan"} chords={"A A A A"}/>
-            <SongLine verse={"pole pole łyse pole"} chords={"2 1 3 7"}/>
-            <SongLine verse={"ale mam już plan"} chords={"A A A A"}/>
-            <SongLine verse={"pole pole łyse pole"} chords={"2 1 3 7"}/>
-            <SongLine verse={"ale mam już plan"} chords={"A A A A"}/>
-            <SongLine verse={"pole pole łyse pole"} chords={"2 1 3 7"}/>
-            <SongLine verse={"ale mam już plan"} chords={"A A A A"}/>
-            <SongLine verse={"pole pole łyse pole"} chords={"2 1 3 7"}/>
-            <SongLine verse={"ale mam już plan"} chords={"A A A A"}/>
-            <SongLine verse={"pole pole łyse pole"} chords={"2 1 3 7"}/>
-            <SongLine verse={"ale mam już plan"} chords={"A A A A"}/>
-            <SongLine verse={"pole pole łyse pole"} chords={"2 1 3 7"}/>
-            <SongLine verse={"ale mam już plan"} chords={"A A A A"}/>
-            <SongLine verse={"pole pole łyse pole"} chords={"2 1 3 7"}/>
-            <SongLine verse={"ale mam już plan"} chords={"A A A A"}/>
-            <SongLine verse={"pole pole łyse pole"} chords={"2 1 3 7"}/>
-            <SongLine verse={"ale mam już plan"} chords={"A A A A"}/>
-            <SongLine verse={"pole pole łyse pole"} chords={"2 1 3 7"}/>
-            <SongLine verse={"ale mam już plan"} chords={"A A A A"}/>
-            <SongLine verse={"pole pole łyse pole"} chords={"2 1 3 7"}/>
-            <SongLine verse={"ale mam już plan"} chords={"A A A A"}/>
-            <SongLine verse={"pole pole łyse pole"} chords={"2 1 3 7"}/>
-            <SongLine verse={"ale mam już plan"} chords={"A A A A"}/>
-            <SongLine verse={"pole pole łyse pole"} chords={"2 1 3 7"}/>
-            <SongLine verse={"ale mam już plan"} chords={"A A A A"}/>
-            <SongLine verse={"pole pole łyse pole"} chords={"2 1 3 7"}/>
-            <SongLine verse={"ale mam już plan"} chords={"A A A A"}/>
-            <SongLine verse={"pole pole łyse pole"} chords={"2 1 3 7"}/>
-            <SongLine verse={"ale mam już plan"} chords={"A A A A"}/>
-            <SongLine verse={"pole pole łyse pole"} chords={"2 1 3 7"}/>
-            <SongLine verse={"ale mam już plan"} chords={"A A A A"}/>
-            <SongLine verse={"pole pole łyse pole"} chords={"2 1 3 7"}/>
-            <SongLine verse={"ale mam już plan"} chords={"A A A A"}/>
-            <SongLine verse={"pole pole łyse pole"} chords={"2 1 3 7"}/>
-            <SongLine verse={"ale mam już plan"} chords={"A A A A"}/>
-            <SongLine verse={"pole pole łyse pole"} chords={"2 1 3 7"}/>
-            <SongLine verse={"ale mam już plan"} chords={"A A A A"}/>
-            <SongLine verse={"pole pole łyse pole"} chords={"2 1 3 7"}/>
-            <SongLine verse={"ale mam już plan"} chords={"A A A A"}/>
-            <SongLine verse={"pole pole łyse pole"} chords={"2 1 3 7"}/>
-            <SongLine verse={"ale mam już plan"} chords={"A A A A"}/>
-            <SongLine verse={"pole pole łyse pole"} chords={"2 1 3 7"}/>
-            <SongLine verse={"ale mam już plan"} chords={"A A A A"}/>
-            <SongLine verse={"pole pole łyse pole"} chords={"2 1 3 7"}/>
-            <SongLine verse={"ale mam już plan"} chords={"A A A A"}/>
-            <SongLine verse={"pole pole łyse pole"} chords={"2 1 3 7"}/>
-            <SongLine verse={"ale mam już plan"} chords={"A A A A"}/>
-            <SongLine verse={"pole pole łyse pole"} chords={"2 1 3 7"}/>
-            <SongLine verse={"ale mam już plan"} chords={"A A A A"}/>
-            <SongLine verse={"pole pole łyse pole"} chords={"2 1 3 7"}/>
-            <SongLine verse={"ale mam już plan"} chords={"A A A A"}/>
-            <SongLine verse={"pole pole łyse pole"} chords={"2 1 3 7"}/>
-            <SongLine verse={"ale mam już plan"} chords={"A A A A"}/>
-            <SongLine verse={"pole pole łyse pole"} chords={"2 1 3 7"}/>
-            <SongLine verse={"ale mam już plan"} chords={"A A A A"}/>
-            <SongLine verse={"pole pole łyse pole"} chords={"2 1 3 7"}/>
-            <SongLine verse={"ale mam już plan"} chords={"A A A A"}/>
-            <SongLine verse={"pole pole łyse pole"} chords={"2 1 3 7"}/>
-            <SongLine verse={"ale mam już plan"} chords={"A A A A"}/>
-            <SongLine verse={"pole pole łyse pole"} chords={"2 1 3 7"}/>
-            <SongLine verse={"ale mam już plan"} chords={"A A A A"}/>
-            <SongLine verse={"pole pole łyse pole"} chords={"2 1 3 7"}/>
-            <SongLine verse={"ale mam już plan"} chords={"A A A A"}/>
-            <SongLine verse={"pole pole łyse pole"} chords={"2 1 3 7"}/>
-            <SongLine verse={"ale mam już plan"} chords={"A A A A"}/>
-            <SongLine verse={"pole pole łyse pole"} chords={"2 1 3 7"}/>
-            <SongLine verse={"ale mam już plan"} chords={"A A A A"}/>
-            <SongLine verse={"pole pole łyse pole"} chords={"2 1 3 7"}/>
-            <SongLine verse={"ale mam już plan"} chords={"A A A A"}/>
-            <SongLine verse={"pole pole łyse pole"} chords={"2 1 3 7"}/>
-            <SongLine verse={"ale mam już plan"} chords={"A A A A"}/>
-            <SongLine verse={"pole pole łyse pole"} chords={"2 1 3 7"}/>
-            <SongLine verse={"ale mam już plan"} chords={"A A A A"}/><SongLine verse={"pole pole łyse pole"} chords={"2 1 3 7"}/>
-            <SongLine verse={"ale mam już plan"} chords={"A A A A"}/>
-            <SongLine verse={"pole pole łyse pole"} chords={"2 1 3 7"}/>
-            <SongLine verse={"ale mam już plan"} chords={"A A A A"}/>
-            <SongLine verse={"pole pole łyse pole"} chords={"2 1 3 7"}/>
-            <SongLine verse={"ale mam już plan"} chords={"A A A A"}/>
-            <SongLine verse={"pole pole łyse pole"} chords={"2 1 3 7"}/>
-            <SongLine verse={"ale mam już plan"} chords={"A A A A"}/>
-            <SongLine verse={"pole pole łyse pole"} chords={"2 1 3 7"}/>
-            <SongLine verse={"ale mam już plan"} chords={"A A A A"}/>
-            <SongLine verse={"pole pole łyse pole"} chords={"2 1 3 7"}/>
-            <SongLine verse={"ale mam już plan"} chords={"A A A A"}/>
-            <SongLine verse={"pole pole łyse pole"} chords={"2 1 3 7"}/>
-            <SongLine verse={"ale mam już plan"} chords={"A A A A"}/>
-            <SongLine verse={"pole pole łyse pole"} chords={"2 1 3 7"}/>
-            <SongLine verse={"ale mam już plan"} chords={"A A A A"}/>
-            <SongLine verse={"pole pole łyse pole"} chords={"2 1 3 7"}/>
-            <SongLine verse={"ale mam już plan"} chords={"A A A A"}/>
-            <SongLine verse={"pole pole łyse pole"} chords={"2 1 3 7"}/>
-            <SongLine verse={"ale mam już plan"} chords={"A A A A"}/>
-            <SongLine verse={"pole pole łyse pole"} chords={"2 1 3 7"}/>
-            <SongLine verse={"ale mam już plan"} chords={"A A A A"}/>
-            <SongLine verse={"pole pole łyse pole"} chords={"2 1 3 7"}/>
-            <SongLine verse={"ale mam już plan"} chords={"A A A A"}/>
-            <SongLine verse={"pole pole łyse pole"} chords={"2 1 3 7"}/>
-            <SongLine verse={"ale mam już plan"} chords={"A A A A"}/>
-            <SongLine verse={"pole pole łyse pole"} chords={"2 1 3 7"}/>
-            <SongLine verse={"ale mam już plan"} chords={"A A A A"}/>
-            <SongLine verse={"pole pole łyse pole"} chords={"2 1 3 7"}/>
-            <SongLine verse={"ale mam już plan"} chords={"A A A A"}/>
-            <SongLine verse={"pole pole łyse pole"} chords={"2 1 3 7"}/>
-            <SongLine verse={"ale mam już plan"} chords={"A A A A"}/>
-            <SongLine verse={"pole pole łyse pole"} chords={"2 1 3 7"}/>
-            <SongLine verse={"ale mam już plan"} chords={"A A A A"}/>
-            <SongLine verse={"pole pole łyse pole"} chords={"2 1 3 7"}/>
-            <SongLine verse={"ale mam już plan"} chords={"A A A A"}/>
-            <SongLine verse={"pole pole łyse pole"} chords={"2 1 3 7"}/>
-            <SongLine verse={"ale mam już plan"} chords={"A A A A"}/>
-            <SongLine verse={"pole pole łyse pole"} chords={"2 1 3 7"}/>
-            <SongLine verse={"ale mam już plan"} chords={"A A A A"}/>
-            <SongLine verse={"pole pole łyse pole"} chords={"2 1 3 7"}/>
-            <SongLine verse={"ale mam już plan"} chords={"A A A A"}/>
-            <SongLine verse={"pole pole łyse pole"} chords={"2 1 3 7"}/>
-            <SongLine verse={"ale mam już plan"} chords={"A A A A"}/>
-
-        </ScrollView>
-        </View>
+        <SongView song={{
+            title: "Szanta panien i mężatek",
+            author: "Jakiś zbok",
+            category: [
+                "shanties",
+                "obscene",
+            ],
+            info: "This is very old shanties with deep meaning",
+            lines: [
+                {
+                    text: "Lorem ipsum qui rem dolor",
+                    chords: "A B C D",
+                },
+                {
+                    text: "Lorem ipsum qui rem dolor",
+                    chords: "E F G",
+                },
+                {
+                    text: "Lorem ipsum qui rem dolor",
+                    chords: "H I J K",
+                },
+                {
+                    text: "Lorem ipsum qui rem dolor",
+                    chords: "L M N",
+                }
+            ]
+        }}/>
     );
   }
 }
