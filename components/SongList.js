@@ -8,9 +8,8 @@ import {
     
 } from 'react-native'
 
-import SongView from './SongView'
 
-import * as book from '../assets/json/songBook.json'
+import * as book from '../assets/json/songBook2.json'
 
 import SongEntry from './SongEntry';
 
@@ -20,13 +19,13 @@ export default class SongList extends React.Component {
 
     state = {
         song: '',
-    }
+    };
 
     _keyExtractor = (item) => item.title;
 
     _renderItem = ({item, key}) => {
-        if(this.props.all == true) {
-            <SongEntry
+        if(this.props.all === true) {
+           return ( <SongEntry
                 key={key}
                 title={item.title}
                 author={item.title}
@@ -35,13 +34,13 @@ export default class SongList extends React.Component {
                         song: item,
                     })
                 }}
-            />
+            />)
         }
-    }
+    };
 
     render() {
 
-        if(this.state.song == '') {
+        if(this.state.song === '') {
             return (
                 <FlatList
                     data={book.songs}
@@ -60,41 +59,3 @@ export default class SongList extends React.Component {
 
 }
 
-
-
-const styles = StyleSheet.create({
-
-    container: {
-        flex: 1,
-        backgroundColor: '#fff',
-    },
-    songEntry: {
-        flex: 1,
-        color: 'black',
-    }
-
-})
-
-
-
-/*
-<View>
-                    {this.state.show && ( 
-                        <FlatList
-                            data={ book.songs }
-                            renderItem={ ({item, key}) => 
-                                <Text key={key} style={styles.songEntry}>
-                                    {item.title}
-                                </Text>
-                            }
-                        />
-                    )}
-                </View>
-                */
-
-/*{this.state.show && ( 
-        <Text>
-            abcd
-        </Text>
-    )}
-    */
