@@ -8,6 +8,8 @@ import {
     
 } from 'react-native'
 
+import SongView from './SongView'
+
 import * as book from '../assets/json/songBook.json'
 
 import SongEntry from './SongEntry';
@@ -27,7 +29,11 @@ export default class SongList extends React.Component {
             key={key}
             title={item.title}
             author={item.title}
-            onPress={() => this.setState({song: item.title})}
+            onPress={() => {
+                this.props.navigation.navigate('Song', {
+                    song: item,
+                })
+            }}
         />
     )
 
@@ -38,7 +44,7 @@ export default class SongList extends React.Component {
                 <FlatList
                     data={book.songs}
                     keyExtractor={this._keyExtractor}
-                    renderItem={this._renderItem}
+                    renderItem={this._renderItem.bind(this)}
                 />
             )
         }
