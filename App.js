@@ -27,21 +27,4 @@ const styles = StyleSheet.create({
         flex: 1,
         backgroundColor: '#fff',
     }
-})
-
-/*
-import SongList from './components/SongList.js';
-
-export default class App extends React.Component {
-
-    render() {
-        return (
-            <View style={styles.container}>
-                <SongList/>
-            </View>
-        )
-    }
-
-}
-
-*/
+});
