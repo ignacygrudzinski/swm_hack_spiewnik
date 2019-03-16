@@ -1,15 +1,17 @@
 import React, { Component } from 'react';
-import { Alert, StyleSheet, Text, TouchableHighlight, View } from 'react-native';
+import {
+    Alert,
+    StyleSheet,
+    Text,
+    TouchableHighlight,
+    View,
+} from 'react-native';
 
 export default class SongEntry extends Component {
-    _onPressButton() {
-        Alert.alert('You tapped the button!')
-    }
-
-
+    
     render() {
         return (
-                <TouchableHighlight onPress={this._onPressButton} underlayColor="white">
+                <TouchableHighlight onPress={this.props.onPress} underlayColor='white'>
                     <View style={styles.entry}>
                         <Text style={styles.titleText}>{this.props.title}</Text>
                         <Text style={styles.authorText}>{this.props.author}</Text>
