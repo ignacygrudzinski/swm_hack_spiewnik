@@ -2,8 +2,9 @@
   "devToolsPort": 19002,
   "expoServerPort": 19000,
   "packagerPort": 19001,
-  "packagerPid": 9923,
+  "packagerPid": 10432,
   "expoServerNgrokUrl": "https://9q-pzt.anonymous.swm-hack-spiewnik.exp.direct",
   "packagerNgrokUrl": "https://packager.9q-pzt.anonymous.swm-hack-spiewnik.exp.direct",
-  "ngrokPid": 9946
+  "ngrokPid": 10454,
+  "webpackServerPort": null
 }
